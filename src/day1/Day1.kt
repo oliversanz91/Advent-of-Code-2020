@@ -5,8 +5,9 @@ import java.io.File
 fun main() {
     val testInput = listOf(1721, 979, 366, 299, 675, 1456)
     val puzzleInput = File("res/day1_input").readLines().map(String::trim).map(String::toInt)
-    val res = day1Extra(puzzleInput)
-    println("res=$res")
+    val res1 = day1(puzzleInput)
+    val res2 = day1Extra(puzzleInput)
+    println("res1=$res1\nres2=$res2")
 }
 
 private fun day1(input: List<Int>): Int {
