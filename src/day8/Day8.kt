@@ -12,7 +12,7 @@ fun main() {
 
     candidates.forEach { index ->
         val modifiedInstructions = fixInstruction(index, input)
-        run(0L, 0, modifiedInstructions, HashSet())?.let(::println)
+        run(0L, 0, modifiedInstructions, HashSet())?.let{ println(it); return }
     }
 }
 
